@@ -18,9 +18,9 @@ input {padding: 0; margin: 0;}
 }
 
 /*-- login --*/
-#login {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #fff; z-index: 10; display: flex; align-self: center; justify-content: center;}
-#loginContent {display: flex; align-self: center; justify-content: space-between; flex-direction: column; height: 50vh;}
-#loginTxt {font-size: 5vw;}
+#login {position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #fff; z-index: 10; display: flex; align-self: center; justify-content: center;}
+#loginContent {display: flex; align-self: center; justify-content: space-between; flex-direction: column; height: 50vh; width: 70vw;}
+#loginTxt {font-size: 2.5vw; line-height: 4.5vw; text-align: center;}
 #loginVerify {display: flex; align-self: center; justify-content: center;}
 #loginInput {flex: 7.5 7.5 75%;}
 #loginBtn {flex: 2.5 2.5 25%;}
