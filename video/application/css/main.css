@@ -17,14 +17,15 @@ input {padding: 0; margin: 0;}
 	user-select: none; /* Standard syntax */	
 }
 
-body {font-family: "Open Sans", Helvetica, sans-serif;}
+body {font-family: 'Open Sans', Helvetica, sans-serif;}
 
 /*-- login --*/
 #login {position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #fff; z-index: 10; display: flex; align-self: center; justify-content: center;}
 #loginContent {display: flex; align-self: center; justify-content: space-between; flex-direction: column; height: 50vh; width: 70vw;}
-#loginTxt {font-size: 2.5vw; line-height: 4.5vw; text-align: center; color: #333;}
+#loginTxt {font-size: 2.5vw; line-height: 4.5vw; font-weight: 300; text-align: center; color: #333;}
 #loginVerify {display: flex; align-self: center; justify-content: center; width: 50vw; height: 85px; border: 5px solid #b00; border-radius: 5px;}
 #loginInput {flex: 7.5 7.5 75%;}
-#pwd_input { width: 95%; height: 85px; padding-left: 5%; font-size: 1.5vw; outline: 0; color: #666;}
+#pwd_input { width: 95%; height: 85px; padding-left: 5%; font-size: 1.5vw; outline: 0; border: 0; color: #666;}
+#pwd_input:placeholder {font-size: 1.5vw;}
 #loginBtn {flex: 2.5 2.5 25%; height: 85px;  background-color: #b00; display: flex; align-items: center; justify-content: center;}
 #loginBtnTxt {color: #fff; font-size: 2vw;}
