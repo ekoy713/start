@@ -22,8 +22,8 @@
 						<input id="pwd_input" tabindex="1" type="text" placeholder="Please enter the video essay access code:" autocomplete="off" />
 					</div>
 					<div id="loginBtn" class="btnClick"><div id="loginBtnTxt">ENTER</div></div>
-					<div id="loginMsg"></div>
 				</div>
+				<div id="loginMsg"></div>
 			</div>
 		</div>
 		<div id="content">
@@ -40,11 +40,14 @@
 				var pwdAnswer = 'SIQINGYANGisAWESOME';
 				if (pwdInput != '') {
 					if (pwdInput.toLowerCase() === pwdAnswer.toLowerCase()) {
+						$('#loginMsg').css('color', '#008000');
 						$('#loginMsg').html('Access code verified successfully! Redirecting to video now after 3 secs...');
 					} else {
+						$('#loginMsg').css('color', '#b00');
 						$('#loginMsg').html('The access code you entered is wrong. Please re-check the code I provided, or message me at <a href="mailto:ekoy.nino@gmail.com">ekoy.nino@gmail.com</a> to request access code. Thank you for your interest and patience!');
 					}
 				} else {
+					$('#loginMsg').css('color', '#b00');
 					$('#loginMsg').html('Please enter the video essay access code to access the video essay.');
 				}
 			});
