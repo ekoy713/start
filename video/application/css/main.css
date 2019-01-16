@@ -1,0 +1,26 @@
+html, body {font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 0; background-color: #fff; position: relative;}
+body {margin: 0; width: 100%; height: 100%; }
+input {padding: 0; margin: 0;}
+
+.click {cursor: pointer;}
+.noselect {
+	-webkit-user-select: none; /* Safari 3.1+ */
+	-mos-user-select: none; /* Firefox 2+ */
+	-ms-user-select: none; /* IE 10+ */
+	user-select: none; /* Standard syntax */
+}
+.btnClick {
+	cursor: pointer;
+	-webkit-user-select: none; /* Safari 3.1+ */
+	-mos-user-select: none; /* Firefox 2+ */
+	-ms-user-select: none; /* IE 10+ */
+	user-select: none; /* Standard syntax */	
+}
+
+/*-- login --*/
+#login {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #fff; z-index: 10; display: flex; align-self: center; justify-content: center;}
+#loginContent {display: flex; align-self: center; justify-content: space-between; flex-direction: column; height: 50vh;}
+#loginTxt {font-size: 5vw;}
+#loginVerify {display: flex; align-self: center; justify-content: center;}
+#loginInput {flex: 7.5 7.5 75%;}
+#loginBtn {flex: 2.5 2.5 25%;}
