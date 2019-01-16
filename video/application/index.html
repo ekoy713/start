@@ -73,7 +73,7 @@
 						$('#loginMsg').css('color', '#008000');
 						$('#loginMsg').html('Access code verified successfully! Redirecting to video now after 5 secs...');
 						$('#vidsrc').attr('src', 'https://picturemosaics.net/lab/test/tmp/CMU.mp4');
-						$('#vid').load();
+						$('#vid')[0].load();
 						setTimeout(function() {$('#login').css('display', 'none');}, 5*1000);
 					} else {
 						$('#loginMsg').css('color', '#b00');
