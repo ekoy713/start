@@ -31,3 +31,9 @@ body, input {font-family: 'Open Sans', Helvetica, sans-serif;}
 #loginBtnTxt {color: #fff; font-size: 2vw;}
 #loginMsg {text-align: center; font-size: 1.2vw; line-height: 1.8vw; height: 30px; font-weight: 600; text-decoration: underline;}
 #loginMsg a {color: #b00; font-weight: bold;}
+
+
+/*-- content --*/
+#content {width: 100vw; height: 100vh; background-color: #fff; z-index: 1; display: flex; align-self: center; justify-content: center;}
+#vidHolder {max-width: 1280px; width: 84vw; height: 47.25vw;}
+#vid {width: 100%; height: 100%;}
