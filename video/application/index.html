@@ -39,10 +39,10 @@
 				var pwdInput = $('#pwd_input').val();
 				var pwdAnswer = 'SIQINGYANGisAWESOME';
 				if (pwdInput != '') {
-					if (pwdInput === pwdAnswer) {
-						$('#loginMsg').html('Access code verified successfully! Redirecting to video now...');
+					if (pwdInput.toLowerCase() === pwdAnswer.toLowerCase()) {
+						$('#loginMsg').html('Access code verified successfully! Redirecting to video now after 3 secs...');
 					} else {
-						$('#loginMsg').html('The access code you entered is wrong. Please re-check the code I provided, or message me at <span>ekoy.nino@gmail.com</span> to request access code. Thank you for your interest and patience!');
+						$('#loginMsg').html('The access code you entered is wrong. Please re-check the code I provided, or message me at <a href="mailto:ekoy.nino@gmail.com">ekoy.nino@gmail.com</a> to request access code. Thank you for your interest and patience!');
 					}
 				} else {
 					$('#loginMsg').html('Please enter the video essay access code to access the video essay.');
