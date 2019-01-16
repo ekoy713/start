@@ -48,7 +48,7 @@
 		<div id="content">
 			<div id="vidHolder">
 				<video id="vid" width="1280" height="720" controls>
-					<source id="vidsrc" src="https://picturemosaics.net/lab/test/tmp/CMU.mp4" type="video/mp4">
+					<source id="vidsrc" src="" type="video/mp4">
 					Your browser does not support HTML5 video.
 				</video>
 			</div>
@@ -72,7 +72,8 @@
 					if (pwdInput.toLowerCase() === pwdAnswer.toLowerCase()) {
 						$('#loginMsg').css('color', '#008000');
 						$('#loginMsg').html('Access code verified successfully! Redirecting to video now after 5 secs...');
-						// $('#vidsrc').attr('src', 'https://picturemosaics.net/lab/test/tmp/CMU.mp4');
+						$('#vidsrc').attr('src', 'https://picturemosaics.net/lab/test/tmp/CMU.mp4');
+						$('#vid').load();
 						setTimeout(function() {$('#login').css('display', 'none');}, 5*1000);
 					} else {
 						$('#loginMsg').css('color', '#b00');
