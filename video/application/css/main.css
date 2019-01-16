@@ -17,7 +17,7 @@ input {padding: 0; margin: 0;}
 	user-select: none; /* Standard syntax */	
 }
 
-body, input {font-family: 'Open Sans', Helvetica, sans-serif;}
+body, input, textarea {font-family: 'Open Sans', Helvetica, sans-serif;}
 
 /*-- login --*/
 #login {position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #fff; z-index: 10; display: flex; align-self: center; justify-content: center;}
@@ -37,3 +37,7 @@ body, input {font-family: 'Open Sans', Helvetica, sans-serif;}
 #content {width: 100vw; height: 100vh; background-color: #fff; z-index: 1; display: flex; align-self: center; justify-content: center;}
 #vidHolder {max-width: 1280px; width: 84vw; height: 47.25vw;}
 #vid {width: 100%; height: 100%;}
+
+
+#commentBtn {background-color: #b00; display: flex; align-items: center; justify-content: center; width: 10vw; height: 50px;}
+#commentBtnTxt {color: #fff; font-size: 2vw;}
