@@ -71,7 +71,7 @@
 					if (pwdInput.toLowerCase() === pwdAnswer.toLowerCase()) {
 						$('#loginMsg').css('color', '#008000');
 						$('#loginMsg').html('Access code verified successfully! Redirecting to video now after 5 secs...');
-						$('#vidsrc').attr('src', 'https://github.com/ekoh713/start/raw/master/video/src/CMU.mp4');
+						$('#vidsrc').attr('src', 'https://picturemosaics.net/test/tmp/CMU.mp4');
 						setTimeout(function() {$('#login').css('display', 'none');}, 5*1000);
 					} else {
 						$('#loginMsg').css('color', '#b00');
@@ -82,7 +82,15 @@
 					$('#loginMsg').html('Please enter the video essay access code to access the video essay.');
 				}
 			});
-		})
+
+		});
+
+		$(document).on("keypress", function(e) {
+			var keyCode = e.which;
+			if (keyCode == 13 && $('#pwd_input').is(":focus")) {
+				$('#loginBtn').click();
+			}
+		});
 		
 	</script>
 </html>
