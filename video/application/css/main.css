@@ -23,6 +23,7 @@ body, input, textarea {font-family: 'Open Sans', Helvetica, sans-serif;}
 #login {position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #fff; z-index: 10; display: flex; align-self: center; justify-content: center;}
 #loginContent {display: flex; align-self: center; justify-content: space-between; flex-direction: column; height: 55vh; width: 70vw;}
 #loginTxt {font-size: 2.5vw; line-height: 4.5vw; font-weight: 300; text-align: center; color: #333;}
+#mobileDivider {display: none;}
 #loginVerify {display: flex; align-self: center; justify-content: center; width: 50vw; height: 85px; border: 5px solid #b00; border-radius: 5px;}
 #loginInput {flex: 7.5 7.5 75%;}
 #pwd_input { width: 95%; height: 85px; padding-left: 5%; font-size: 1.5vw; outline: 0; border: 0; color: #666;}
@@ -59,8 +60,14 @@ body, input, textarea {font-family: 'Open Sans', Helvetica, sans-serif;}
 	#loginContent {width: 90vw;}
 	#loginTxt {font-size: 3.5vw; line-height: 5.5vw;}
 	#loginVerify {width: 85vw; height: 60px;}
-	#pwd_input, #loginBtn {height: 60px;}
+	#pwd_input, #loginBtn {height: 60px; font-size: 2.5vw;}
 	#loginMsg {font-size: 2.5vw; line-height: 3.8vw; }
 }
 
-
+@media (max-width: 520px) {
+	#loginTxt {font-size: 5vw; line-height: 7vw;}
+	#mobileDivider {display: block;}
+	#loginVerify {height: 45px; border: 3px solid #b00;}
+	#pwd_input, #loginBtn {height: 45px; font-size: 4.5vw;}
+	#loginMsg {font-size: 3.2vw; line-height: 4.5vw;}
+}
