@@ -60,7 +60,9 @@ body, input, textarea {font-family: 'Open Sans', Helvetica, sans-serif;}
 	#loginContent {width: 90vw;}
 	#loginTxt {font-size: 3.5vw; line-height: 5.5vw;}
 	#loginVerify {width: 85vw; height: 60px;}
-	#pwd_input, #loginBtn {height: 60px; font-size: 2.5vw;}
+	#pwd_input, #loginBtn {height: 60px;}
+	#pwd_input {font-size: 2.5vw;}
+	#loginBtnTxt {font-size: 3.5vw;}
 	#loginMsg {font-size: 2.5vw; line-height: 3.8vw; }
 }
 
@@ -68,6 +70,8 @@ body, input, textarea {font-family: 'Open Sans', Helvetica, sans-serif;}
 	#loginTxt {font-size: 5vw; line-height: 7vw;}
 	#mobileDivider {display: block;}
 	#loginVerify {height: 45px; border: 3px solid #b00;}
-	#pwd_input, #loginBtn {height: 45px; font-size: 4.5vw;}
+	#pwd_input, #loginBtn {height: 45px; }
+	#pwd_input {font-size: 3vw;}
+	#loginBtnTxt {font-size: 4.5vw;}
 	#loginMsg {font-size: 3.2vw; line-height: 4.5vw;}
 }
